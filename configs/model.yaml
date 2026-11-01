@@ -1,0 +1,22 @@
+# Model Architecture & Quantization Configuration
+model_name_or_path: "Qwen/Qwen2.5-1.5B-Instruct"
+torch_dtype: "bfloat16"
+device_map: "auto"
+max_seq_length: 2048
+use_gradient_checkpointing: true
+
+lora:
+  enabled: true
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  bias: "none"
+  task_type: "CAUSAL_LM"

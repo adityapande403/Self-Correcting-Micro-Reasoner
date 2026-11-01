@@ -1,0 +1,12 @@
+# Comprehensive Evaluation Configuration
+test_dataset_path: "data/splits/test.jsonl"
+batch_size: 2
+max_new_tokens: 512
+temperature: 0.0
+top_p: 1.0
+output_dir: "outputs/reports"
+
+self_correction:
+  prompt_template_single_pass: "Question: {problem}\nAnswer:"
+  prompt_template_with_verification: "Question: {problem}\nPlease solve the problem step by step, and explicitly verify your calculation before giving your final answer."
+  prompt_template_revision: "Question: {problem}\n\nYour previous solution was:\n{previous_solution}\n\nPlease carefully check this solution. If there was a mistake, explain the mistake and correct it. State your final answer in <answer>...</answer> tags."

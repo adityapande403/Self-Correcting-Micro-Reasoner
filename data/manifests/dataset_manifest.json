@@ -1,0 +1,63 @@
+{
+  "seed": 42,
+  "splits": {
+    "sft_train": {
+      "count": 2000,
+      "sha256": "69f00b9d1c963435ce33f2ac8e2aabb3398184a46319e4c57a6c2cfe4d84fee9",
+      "file_path": "data/splits\\sft_train.jsonl",
+      "task_distribution": {
+        "word_problem": 1770,
+        "algebra": 95,
+        "geometry": 75,
+        "rate_and_motion": 60
+      }
+    },
+    "sft_val": {
+      "count": 200,
+      "sha256": "54a28e181ddafcc12aaf2332e4ba09572ef3dd234d324a16b46f3c2cf012ff02",
+      "file_path": "data/splits\\sft_val.jsonl",
+      "task_distribution": {
+        "word_problem": 170,
+        "algebra": 12,
+        "rate_and_motion": 12,
+        "geometry": 6
+      }
+    },
+    "grpo_train": {
+      "count": 2000,
+      "sha256": "cd0ad3d207ee7db57f82c7b0f746b4a39b16127a4e63ad359a553a79a40d141a",
+      "file_path": "data/splits\\grpo_train.jsonl",
+      "task_distribution": {
+        "word_problem": 1769,
+        "algebra": 97,
+        "rate_and_motion": 61,
+        "geometry": 73
+      }
+    },
+    "grpo_val": {
+      "count": 200,
+      "sha256": "5494ace8fbca8703250b46147d2c6f1f84162df36f51f05dbb1a6d43eaae0171",
+      "file_path": "data/splits\\grpo_val.jsonl",
+      "task_distribution": {
+        "word_problem": 171,
+        "geometry": 15,
+        "algebra": 10,
+        "rate_and_motion": 4
+      }
+    },
+    "test": {
+      "count": 300,
+      "sha256": "a976e1da0de93dded4726a76a25281c2a9269f1c3c71da8b7bf5440c88f45df8",
+      "file_path": "data/splits\\test.jsonl",
+      "task_distribution": {
+        "word_problem": 300
+      }
+    }
+  },
+  "leakage_check": {
+    "test_total": 300,
+    "leaked_count": 0,
+    "leakage_rate": 0.0,
+    "leaked_samples": []
+  }
+}

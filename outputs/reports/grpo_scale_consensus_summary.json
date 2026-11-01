@@ -1,0 +1,13 @@
+{
+  "num_problems": 100,
+  "k_samples": 8,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "pass_at_1_accuracy": 0.4875,
+  "consensus_accuracy": 0.67,
+  "pass_at_k_accuracy": 0.81,
+  "mean_agreement_ratio": 0.545,
+  "mean_tokens_per_problem": 1082.0,
+  "timestamp": "2026-11-01 18:55:43",
+  "stage": "grpo_scale_consensus"
+}

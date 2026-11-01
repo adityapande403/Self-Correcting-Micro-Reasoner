@@ -1,0 +1,25 @@
+{
+  "num_samples": 100,
+  "exact_accuracy": 0.58,
+  "parse_success_rate": 1.0,
+  "invalid_output_rate": 0.0,
+  "mean_output_tokens": 138.68,
+  "median_output_tokens": 125.0,
+  "p95_output_tokens": 201.0,
+  "min_output_tokens": 85,
+  "max_output_tokens": 324,
+  "mean_latency_sec": 1.6445194500000797,
+  "median_latency_sec": 1.4222368249975261,
+  "peak_vram_mb": 3131.2001953125,
+  "accuracy_by_task": {
+    "word_problem": 0.58
+  },
+  "counts_by_task": {
+    "word_problem": 100
+  },
+  "accuracy_by_difficulty": {
+    "medium": 0.58
+  },
+  "stage": "grpo",
+  "timestamp": "2026-10-31 13:48:57"
+}
